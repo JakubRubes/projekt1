@@ -86,6 +86,6 @@ for length in text.split():
             length = length.replace(letter, '')
     wordLength = len(length) 
     letterCount[wordLength] = letterCount.get(wordLength, 0) + 1
-for i in range(len(letterCount) + 1):
-    if i in letterCount:
-        print(f'{i:>3}|{"*" * letterCount[i]:<22}|{letterCount[i]:<2}')
+for number in range(len(letterCount) + 1):
+    if number in letterCount:
+        print(f'{number:>3}|{"*" * letterCount[number]:<22}|{letterCount[number]:<2}')
