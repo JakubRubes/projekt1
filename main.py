@@ -68,7 +68,7 @@ for words in text.split():
         titleCount += 1 
     elif words.isupper():
         upperCount += 1
-    elif words.islower():
+    else words.islower():
         lowerCount += 1
 print(f'There are {wordsCount} words in the selected text.')
 print(f'There are {titleCount} titlecase words.')
